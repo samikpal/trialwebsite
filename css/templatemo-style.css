@@ -21,9 +21,9 @@ body {
 #contact,
 #contact .fp-slide,
 #contact .fp-tableCell,
-#portfolio,
-#portfolio .fp-slide,
-#portfolio .fp-tableCell,
+#projects,
+#projects .fp-slide,
+#projects .fp-tableCell,
 footer,
 footer .fp-slide,
 footer .fp-tableCell {
@@ -54,7 +54,7 @@ h5 {
 
 #skills,
 #about,
-#portfolio,
+#projects,
 #contact {
     padding-top: 100px;
     padding-bottom: 120px;
@@ -241,28 +241,24 @@ h5 {
 #skills .media {
     align-content: center;
     height: 120px;
+    width: 25%;
 }
 
-
-/* #skills .media .fa {
-    border: 2px solid #ffffff;
-    border-radius: 50%;
-    color: #8ec095;
-    font-size: 24px;
-    margin-right: 24px;
-    width: 60px;
-    height: 60px;
-    line-height: 55px;
+#skills .skillsets {
+    display: flex;
+    justify-content: space-between;
     text-align: center;
-    vertical-align: middle;
-    transition: all 0.4s ease-in;
-} */
+}
+
+#skills .barset {
+    width: 75%;
+}
 
 #skills .media i:hover {
-    background: #ffffff;
     cursor: pointer;
     align-items: center;
     transform: scale(1.5);
+    color: white;
 }
 
 #skills .media .media-object {
@@ -333,24 +329,24 @@ h5 {
 /* end about */
 
 
-/* start portfolio */
+/* start projects */
 
-#portfolio {
+#projects {
     background: #1a1a1a;
     text-align: center;
 }
 
-#portfolio h2 {
+#projects h2 {
     padding-bottom: 30px;
 }
 
-#portfolio .portfolio-thumb {
+#projects .projects-thumb {
     overflow: hidden;
     position: relative;
     margin-bottom: 30px;
 }
 
-#portfolio .portfolio-thumb .portfolio-overlay {
+#projects .projects-thumb .projects-overlay {
     background: aquamarine;
     top: 0;
     left: 0;
@@ -364,14 +360,14 @@ h5 {
     transition: all 0.4s ease-in-out;
 }
 
-#portfolio .portfolio-thumb:hover .portfolio-overlay {
+#projects .projects-thumb:hover .projects-overlay {
     cursor: pointer;
     opacity: 0.8;
     transform: scale(0.9);
 }
 
 
-/* end portfolio */
+/* end projects */
 
 
 /* start contact */
